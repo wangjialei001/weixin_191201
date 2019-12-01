@@ -50,5 +50,10 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  onGotUserInfo: function (e) {
+    console.log(e.detail.errMsg)
+    console.log(e.detail.userInfo)
+    console.log(e.detail.rawData)
   }
 })
